@@ -1,11 +1,20 @@
 {
-    "rewrites": [
-        {
-          "source": ".*",
-          "destination": "/index.html"
-        }
-      ],
-    "redirects": [],
-    "basic":[],
-    "ip_restrictions":[]
+  "routes": [
+    {
+      "path": "/",
+      "file": "/index.html"
+    },
+    {
+      "path": "/about",
+      "file": "/about/index.html"
+    },
+    {
+      "path": "/blog",
+      "file": "/blog/index.html"
+    },
+    {
+      "path": "/blog/:slug",
+      "file": "/blog/[slug]/index.html"
+    }
+  ]
 }
